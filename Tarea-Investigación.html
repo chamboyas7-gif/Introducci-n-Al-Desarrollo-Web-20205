@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea HTML</title>
+    
+</head>
+<body>
+
+    <h1>Tarea de HTML</h1>
+
+    <section>
+        <h2>Diferencias entre etiquetas HTML</h2>
+
+        <h3><code>&lt;b&gt;</code> vs <code>&lt;strong&gt;</code></h3>
+        <p><b>Bold (b):</b> Aplica negrita sin significado semántico.</p>
+        <p><strong>Strong:</strong> Aplica negrita pero con énfasis, Google le da más importancia al texto dentro de <code>&lt;strong&gt;</code>.</p>
+
+        <h3><code>&lt;i&gt;</code> vs <code>&lt;em&gt;</code></h3>
+        <p><i>Italic (i):</i> Aplica cursiva solo visualmente.</p>
+        <p><em>Emphasis (em):</em> Aplica énfasis en cursiva y puede ser interpretado como más relevante por buscadores.</p>
+
+        <h3><code>&lt;s&gt;</code> vs <code>&lt;del&gt;</code></h3>
+        <p><s>Strikethrough (s):</s> Tacha el texto solo visualmente.</p>
+        <p><del>Deleted (del):</del> Indica que el texto fue eliminado, tiene valor semántico y puede ser usado por herramientas de lectura.</p>
+    </section>
+
+    <section>
+        <h2>Elementos de línea y de bloque</h2>
+
+        <h3>¿Qué son?</h3>
+        <p>
+            Los <strong>elementos de línea</strong> no comienzan en una nueva línea y solo ocupan el espacio necesario. Se usan dentro de párrafos o bloques.<br>
+            Los <strong>elementos de bloque</strong> comienzan en una nueva línea y ocupan todo el ancho disponible del contenedor.
+        </p>
+
+        <h3>5 ejemplos de elementos de línea:</h3>
+        <ul>
+            <li><code>&lt;span&gt;</code></li>
+            <li><code>&lt;a&gt;</code></li>
+            <li><code>&lt;strong&gt;</code></li>
+            <li><code>&lt;em&gt;</code></li>
+            <li><code>&lt;img&gt;</code></li>
+        </ul>
+
+        <h3>5 ejemplos de elementos de bloque:</h3>
+        <ul>
+            <li><code>&lt;div&gt;</code></li>
+            <li><code>&lt;p&gt;</code></li>
+            <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></li>
+            <li><code>&lt;ul&gt;</code></li>
+            <li><code>&lt;form&gt;</code></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Campos de formulario y ejemplos</h2>
+
+        <form>
+            <p><strong>1. Input (type="text"):</strong></p>
+            <p>El campo "input" en HTML crea un campo interactivo dentro de un formulario web para que los usuarios ingresen datos, como texto, contraseñas, números, o seleccionen opciones. Sus propiedades, controladas principalmente por el atributo type (que define el tipo de campo, como text, email, password, date, etc.), permiten especificar el formato, validación y comportamiento del campo</p>
+            
+            <p>La propiedad <code>type</code> especifica el tipo de datos que el usuario puede ingresar. A continuación, se muestran 7 ejemplos diferentes:</p>
+
+            <form>
+            <li><label for="text">Texto:</label>
+            <input type="text" id="text" name="texto" placeholder="Escribe algo..."></li>
+
+            <li><label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="correo" placeholder="ejemplo@dominio.com"></li>
+
+            <li><label for="number">Número:</label>
+            <input type="number" id="number" name="numero" min="1" max="100"></li>
+
+            <li><label for="password">Contraseña:</label>
+            <input type="password" id="password" name="clave"></li>
+
+            <li><label for="date">Fecha:</label>
+            <input type="date" id="date" name="fecha"></li>
+
+            <li><label for="checkbox">Acepto términos:</label>
+            <input type="checkbox" id="checkbox" name="terminos"></li>
+
+            <li><label for="file">Subir archivo:</label>
+            <input type="file" id="file" name="archivo"></li>
+            
+            <button type="submit">Enviar</button>
+            </form>
+
+            <p><strong>2. Label:</strong></p> 
+            <p>Su función principal es ofrecer una guía para los usuarios sobre la información que deben ingresar, y al hacer clic en el texto de la etiqueta, el elemento asociado (como un input) recibe el foco, facilitando la interacción, especialmente para usuarios con lectores de pantalla o que usan dispositivos táctiles</p>
+            <p><em>Por ejemplo:</em></p>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"><br><br>
+
+            <p><strong>3. Output:</strong></p>
+            <p>Muestra un resultado calculado</p>
+            <p><em>Por ejemplo:</em></p>
+            <label>Resultado:</label>
+            <output name="resultado" id="resultado">123</output><br><br>
+
+            <p><strong>4. Progress:</strong></p>
+            <p>Crea una barra de progreso visual para indicar el estado de finalización de una tarea, mostrando el avance de manera gráfica</p>
+            <p><em>Por ejemplo:</em></p>
+            <label for="progreso">Progreso:</label><br>
+            <progress id="progreso" value="70" max="100">70%</progress><br><br>
+
+            <p><strong>5. Select y Option:</strong></p>
+            <p>Se usan para crear menús desplegables donde los usuarios pueden seleccionar una opción de una lista predefinida</p>
+            <p><em>Por ejemplo:</em></p>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+                <option value="es">España</option>
+            </select><br><br>
+
+            <p><strong>6. Textarea:</strong></p>
+            <p>Crea un campo de texto multilínea para la entrada de texto largo en formularios web, permitiendo al usuario escribir varias líneas de texto y, a menudo, desplazarse por él</p>
+            <p><em>Por ejemplo:</em></p>
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea><br><br>
+        </form>
+    </section>
+
+</body>
+</html>
