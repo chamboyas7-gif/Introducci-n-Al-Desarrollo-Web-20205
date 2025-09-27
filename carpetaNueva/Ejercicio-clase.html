@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <titlte> Formulario </title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p id="mensaje"></p>
+    <form>
+         
+        <li><label for="nombre">Nombre:</label>
+        <input placeholder="Escriba su nombre" id="nombre" required></li>
+        <br>
+
+        <li><label for="edad">Edad:</label>
+        <input placeholder="Escriba su edad" id="edad" required></li>
+        <br>
+        <li><label for="dia">Día favorito de la semana :</label>
+    
+        <select id="dia" required>
+            <option>Lunes</option>
+            <option>Martes</option>
+            <option>Miercoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option>Sabado</option>
+            <option>Domingo</option>
+        </select>
+        <br><br>
+        <button type="button"onclick="guardar_localStorage(document.getElementById('nombre').value, document.getElementById('edad').value, document.getElementById('dia').value)"> Guardar </button>
+
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
