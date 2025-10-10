@@ -1,4 +1,5 @@
 CLASES EN JAVASCRIPT
+
 ¿Qué son las clases en Javascript?
   Las clases se dice que son funciones especiales, como las expresiones de funciones y decaraciones de funciones. Las clases son útiles para organizar el código, crear múltiples objetos con propiedades y comportamientos similares.
 ¿Cómo se usan las clases?
