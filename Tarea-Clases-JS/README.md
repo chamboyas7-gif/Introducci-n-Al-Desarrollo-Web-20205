@@ -6,6 +6,7 @@ CLASES EN JAVASCRIPT
 ¿Cómo se usan las clases?
 
   Primero definimos una plantilla con la palabra clave class, posteriormente un consructor para los atributos inciales, con sus respectivas propiedades y métodos para las funcionalidades deseadas. 
+  
 ¿Cómo se crean instancias?
 
   Las isntancias se crean con "this." seguidas de algún atributo que se deseé para la clase, dentro del constructor. 
